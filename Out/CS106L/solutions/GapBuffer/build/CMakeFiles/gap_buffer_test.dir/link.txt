@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/gap_buffer_test.dir/gap_buffer_test.cc.o -o gap_buffer_test  lib/libgtest_main.a lib/libgtest.a

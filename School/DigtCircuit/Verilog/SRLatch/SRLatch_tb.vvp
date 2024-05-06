@@ -1,0 +1,80 @@
+#! /usr/bin/vvp
+:ivl_version "11.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 11;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x63e046dd9110 .scope module, "SRLatch_tb" "SRLatch_tb" 2 2;
+ .timescale -9 -11;
+v0x63e046dec860_0 .net "Q", 0 0, L_0x63e046decd00;  1 drivers
+v0x63e046dec920_0 .net "Qn", 0 0, L_0x63e046deced0;  1 drivers
+v0x63e046dec9f0_0 .var "R", 0 0;
+v0x63e046decaf0_0 .var "S", 0 0;
+S_0x63e046dd92a0 .scope module, "DUT" "SRLatch" 2 5, 3 1 0, S_0x63e046dd9110;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "S";
+    .port_info 1 /INPUT 1 "R";
+    .port_info 2 /OUTPUT 1 "Q";
+    .port_info 3 /OUTPUT 1 "Qn";
+L_0x63e046decbc0 .functor OR 1, L_0x63e046deced0, v0x63e046dec9f0_0, C4<0>, C4<0>;
+L_0x63e046decd00 .functor NOT 1, L_0x63e046decbc0, C4<0>, C4<0>, C4<0>;
+L_0x63e046dece10 .functor OR 1, L_0x63e046decd00, v0x63e046decaf0_0, C4<0>, C4<0>;
+L_0x63e046deced0 .functor NOT 1, L_0x63e046dece10, C4<0>, C4<0>, C4<0>;
+v0x63e046dc78f0_0 .net "Q", 0 0, L_0x63e046decd00;  alias, 1 drivers
+v0x63e046dec380_0 .net "Qn", 0 0, L_0x63e046deced0;  alias, 1 drivers
+v0x63e046dec440_0 .net "R", 0 0, v0x63e046dec9f0_0;  1 drivers
+v0x63e046dec510_0 .net "S", 0 0, v0x63e046decaf0_0;  1 drivers
+v0x63e046dec5d0_0 .net *"_ivl_0", 0 0, L_0x63e046decbc0;  1 drivers
+v0x63e046dec700_0 .net *"_ivl_4", 0 0, L_0x63e046dece10;  1 drivers
+    .scope S_0x63e046dd9110;
+T_0 ;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x63e046decaf0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x63e046dec9f0_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x63e046decaf0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x63e046dec9f0_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x63e046decaf0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x63e046dec9f0_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x63e046decaf0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x63e046dec9f0_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x63e046decaf0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x63e046dec9f0_0, 0, 1;
+    %delay 1000, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x63e046decaf0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x63e046dec9f0_0, 0, 1;
+    %delay 1000, 0;
+    %vpi_call 2 17 "$stop" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x63e046dd9110;
+T_1 ;
+    %vpi_call 2 21 "$dumpfile", "SRLatch_tb.vcd" {0 0 0};
+    %vpi_call 2 22 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x63e046dd9110 {0 0 0};
+    %delay 12000, 0;
+    %vpi_call 2 23 "$stop" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "SRLatch_tb.v";
+    "SRLatch.v";

@@ -1,0 +1,174 @@
+$date
+	Tue Apr 23 21:24:01 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module encoder8_3_tb $end
+$var wire 1 ! Y2 $end
+$var wire 1 " Y1 $end
+$var wire 1 # Y0 $end
+$var reg 8 $ A [7:0] $end
+$var reg 3 % i [2:0] $end
+$scope module DUT $end
+$var wire 1 & A0 $end
+$var wire 1 ' A1 $end
+$var wire 1 ( A2 $end
+$var wire 1 ) A3 $end
+$var wire 1 * A4 $end
+$var wire 1 + A5 $end
+$var wire 1 , A6 $end
+$var wire 1 - A7 $end
+$var wire 1 # Y0 $end
+$var wire 1 " Y1 $end
+$var wire 1 ! Y2 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1-
+1,
+1+
+1*
+1)
+1(
+1'
+0&
+b0 %
+b11111110 $
+1#
+1"
+1!
+$end
+#10
+0#
+0'
+1&
+b11111101 $
+b1 %
+#20
+1#
+0"
+0(
+1'
+b11111011 $
+b10 %
+#30
+0#
+0)
+1(
+b11110111 $
+b11 %
+#40
+1#
+1"
+0!
+0*
+1)
+b11101111 $
+b100 %
+#50
+0#
+0+
+1*
+b11011111 $
+b101 %
+#60
+1#
+0"
+0,
+1+
+b10111111 $
+b110 %
+#70
+0#
+0-
+1,
+b1111111 $
+b111 %
+#80
+1#
+1"
+1!
+0&
+1-
+b11111110 $
+b0 %
+#90
+0#
+0'
+1&
+b11111101 $
+b1 %
+#100
+1#
+0"
+0(
+1'
+b11111011 $
+b10 %
+#110
+0#
+0)
+1(
+b11110111 $
+b11 %
+#120
+1#
+1"
+0!
+0*
+1)
+b11101111 $
+b100 %
+#130
+0#
+0+
+1*
+b11011111 $
+b101 %
+#140
+1#
+0"
+0,
+1+
+b10111111 $
+b110 %
+#150
+0#
+0-
+1,
+b1111111 $
+b111 %
+#160
+1#
+1"
+1!
+0&
+1-
+b11111110 $
+b0 %
+#170
+0#
+0'
+1&
+b11111101 $
+b1 %
+#180
+1#
+0"
+0(
+1'
+b11111011 $
+b10 %
+#190
+0#
+0)
+1(
+b11110111 $
+b11 %
+#200

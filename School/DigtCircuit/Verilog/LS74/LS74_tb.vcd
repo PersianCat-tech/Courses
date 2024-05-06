@@ -1,0 +1,79 @@
+$date
+	Mon May  6 13:06:54 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module LS74_tb $end
+$var wire 1 ! Qn $end
+$var wire 1 " Q $end
+$var reg 1 # CLR $end
+$var reg 1 $ CP $end
+$var reg 1 % D $end
+$var reg 1 & SET $end
+$scope module DUT $end
+$var wire 1 # CLR $end
+$var wire 1 $ CP $end
+$var wire 1 % D $end
+$var wire 1 " Q $end
+$var wire 1 ! Qn $end
+$var wire 1 & SET $end
+$var wire 1 ' g3 $end
+$var wire 1 ( g4 $end
+$var wire 1 ) g5 $end
+$var wire 1 * g6 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1*
+0)
+1(
+1'
+1&
+0%
+0$
+1#
+x"
+x!
+$end
+#1000
+0'
+1"
+1)
+0!
+0*
+1(
+1%
+1$
+#2000
+1'
+0$
+#3000
+0'
+1$
+#4000
+0)
+1*
+1'
+0%
+0$
+#5000
+0"
+1!
+0(
+1$
+#6000
+1(
+0$
+#7000
+0(
+1$
+#8000
+1(
+0$
+#9000

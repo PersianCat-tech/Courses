@@ -1,0 +1,49 @@
+$date
+	Sun May  5 21:24:25 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module SRLatch_tb $end
+$var wire 1 ! Qn $end
+$var wire 1 " Q $end
+$var reg 1 # R $end
+$var reg 1 $ S $end
+$scope module DUT $end
+$var wire 1 " Q $end
+$var wire 1 ! Qn $end
+$var wire 1 # R $end
+$var wire 1 $ S $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1$
+0#
+1"
+0!
+$end
+#1000
+1!
+0"
+1#
+0$
+#2000
+1"
+0!
+0#
+1$
+#3000
+0$
+#4000
+0"
+1#
+1$
+#5000
+1"
+0#
+#6000

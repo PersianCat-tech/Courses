@@ -1,0 +1,5 @@
+if(EXISTS "/home/persiancatubt/Course/Out/CS106L/reference/assignments/GapBuffer/build/gap_buffer_test[1]_tests.cmake")
+  include("/home/persiancatubt/Course/Out/CS106L/reference/assignments/GapBuffer/build/gap_buffer_test[1]_tests.cmake")
+else()
+  add_test(gap_buffer_test_NOT_BUILT gap_buffer_test_NOT_BUILT)
+endif()
